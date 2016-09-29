@@ -1,0 +1,973 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		84ACD97C1D9A1A8C00C2D0CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84ACD97B1D9A1A8C00C2D0CC /* AppDelegate.swift */; };
+		84ACD97E1D9A1A8C00C2D0CC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84ACD97D1D9A1A8C00C2D0CC /* ViewController.swift */; };
+		84ACD9811D9A1A8C00C2D0CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84ACD97F1D9A1A8C00C2D0CC /* Main.storyboard */; };
+		84ACD9831D9A1A8C00C2D0CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84ACD9821D9A1A8C00C2D0CC /* Assets.xcassets */; };
+		84ACD9861D9A1A8C00C2D0CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84ACD9841D9A1A8C00C2D0CC /* LaunchScreen.storyboard */; };
+		84ACD98B1D9A1A8C00C2D0CC /* Lumen WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 84ACD98A1D9A1A8C00C2D0CC /* Lumen WatchKit App.app */; };
+		84ACD9911D9A1A8C00C2D0CC /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84ACD98F1D9A1A8C00C2D0CC /* Interface.storyboard */; };
+		84ACD9931D9A1A8C00C2D0CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84ACD9921D9A1A8C00C2D0CC /* Assets.xcassets */; };
+		84ACD99A1D9A1A8C00C2D0CC /* Lumen WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 84ACD9991D9A1A8C00C2D0CC /* Lumen WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		84ACD9A11D9A1A8C00C2D0CC /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84ACD9A01D9A1A8C00C2D0CC /* InterfaceController.swift */; };
+		84ACD9A31D9A1A8C00C2D0CC /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84ACD9A21D9A1A8C00C2D0CC /* ExtensionDelegate.swift */; };
+		84ACD9A51D9A1A8C00C2D0CC /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84ACD9A41D9A1A8C00C2D0CC /* NotificationController.swift */; };
+		84ACD9A71D9A1A8C00C2D0CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84ACD9A61D9A1A8C00C2D0CC /* Assets.xcassets */; };
+		84AFD5D01D9B2DBB001040C2 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84AFD5C31D9B2DAC001040C2 /* Alamofire.framework */; };
+		84AFD5D11D9B2DBB001040C2 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 84AFD5C31D9B2DAC001040C2 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		84AFD5DA1D9B2E2B001040C2 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84AFD5CF1D9B2DAC001040C2 /* Alamofire.framework */; };
+		84AFD5DB1D9B2E2B001040C2 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 84AFD5CF1D9B2DAC001040C2 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		84AFD5ED1D9C72E1001040C2 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8407DADB1D9B19E400A2B0EE /* CoreBluetooth.framework */; };
+		84AFD5EE1D9C72E2001040C2 /* CoreBluetooth.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8407DADB1D9B19E400A2B0EE /* CoreBluetooth.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		84AFD6141D9C9940001040C2 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84AFD60F1D9C9930001040C2 /* SwiftyJSON.framework */; };
+		84AFD6151D9C9940001040C2 /* SwiftyJSON.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 84AFD60F1D9C9930001040C2 /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		84AFD6191D9C9978001040C2 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84AFD60F1D9C9930001040C2 /* SwiftyJSON.framework */; };
+		84AFD61A1D9C9978001040C2 /* SwiftyJSON.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 84AFD60F1D9C9930001040C2 /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		84AFD61E1D9C9F55001040C2 /* MainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AFD61D1D9C9F55001040C2 /* MainScreen.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		84ACD98C1D9A1A8C00C2D0CC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84ACD9701D9A1A8C00C2D0CC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84ACD9891D9A1A8C00C2D0CC;
+			remoteInfo = "Lumen WatchKit App";
+		};
+		84ACD99B1D9A1A8C00C2D0CC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84ACD9701D9A1A8C00C2D0CC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84ACD9981D9A1A8C00C2D0CC;
+			remoteInfo = "Lumen WatchKit Extension";
+		};
+		84AFD5C21D9B2DAC001040C2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84AFD5B71D9B2DAC001040C2 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8111E3319A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS";
+		};
+		84AFD5C41D9B2DAC001040C2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84AFD5B71D9B2DAC001040C2 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8111E3E19A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS Tests";
+		};
+		84AFD5C61D9B2DAC001040C2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84AFD5B71D9B2DAC001040C2 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4DD67C0B1A5C55C900ED2280;
+			remoteInfo = "Alamofire macOS";
+		};
+		84AFD5C81D9B2DAC001040C2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84AFD5B71D9B2DAC001040C2 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F829C6B21A7A94F100A2CD59;
+			remoteInfo = "Alamofire macOS Tests";
+		};
+		84AFD5CA1D9B2DAC001040C2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84AFD5B71D9B2DAC001040C2 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4CF626EF1BA7CB3E0011A099;
+			remoteInfo = "Alamofire tvOS";
+		};
+		84AFD5CC1D9B2DAC001040C2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84AFD5B71D9B2DAC001040C2 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4CF626F81BA7CB3E0011A099;
+			remoteInfo = "Alamofire tvOS Tests";
+		};
+		84AFD5CE1D9B2DAC001040C2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84AFD5B71D9B2DAC001040C2 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E4202FE01B667AA100C997FB;
+			remoteInfo = "Alamofire watchOS";
+		};
+		84AFD5D21D9B2DBB001040C2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84AFD5B71D9B2DAC001040C2 /* Alamofire.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = F8111E3219A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS";
+		};
+		84AFD5DC1D9B2E2B001040C2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84AFD5B71D9B2DAC001040C2 /* Alamofire.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = E4202FCD1B667AA100C997FB;
+			remoteInfo = "Alamofire watchOS";
+		};
+		84AFD6061D9C9930001040C2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84AFD5FC1D9C9930001040C2 /* SwiftyJSON.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2E4FEFDB19575BE100351305;
+			remoteInfo = "SwiftyJSON iOS";
+		};
+		84AFD6081D9C9930001040C2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84AFD5FC1D9C9930001040C2 /* SwiftyJSON.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 2E4FEFE619575BE100351305;
+			remoteInfo = "SwiftyJSON iOS Tests";
+		};
+		84AFD60A1D9C9930001040C2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84AFD5FC1D9C9930001040C2 /* SwiftyJSON.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9C7DFC5B1A9102BD005AA3F7;
+			remoteInfo = "SwiftyJSON OSX";
+		};
+		84AFD60C1D9C9930001040C2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84AFD5FC1D9C9930001040C2 /* SwiftyJSON.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9C7DFC651A9102BD005AA3F7;
+			remoteInfo = "SwiftyJSON OSX Tests";
+		};
+		84AFD60E1D9C9930001040C2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84AFD5FC1D9C9930001040C2 /* SwiftyJSON.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E4D7CCE81B9465A700EE7221;
+			remoteInfo = "SwiftyJSON watchOS";
+		};
+		84AFD6101D9C9930001040C2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84AFD5FC1D9C9930001040C2 /* SwiftyJSON.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7236B4F61BAC14150020529B;
+			remoteInfo = "SwiftyJSON tvOS";
+		};
+		84AFD6121D9C9930001040C2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84AFD5FC1D9C9930001040C2 /* SwiftyJSON.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A8580F741BCF5C5B00DA927B;
+			remoteInfo = "SwiftyJSON tvOS Tests";
+		};
+		84AFD6161D9C9940001040C2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84AFD5FC1D9C9930001040C2 /* SwiftyJSON.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = E4D7CCDE1B9465A700EE7221;
+			remoteInfo = "SwiftyJSON watchOS";
+		};
+		84AFD61B1D9C9978001040C2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84AFD5FC1D9C9930001040C2 /* SwiftyJSON.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = E4D7CCDE1B9465A700EE7221;
+			remoteInfo = "SwiftyJSON watchOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8407DB211D9B291A00A2B0EE /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				84AFD5EE1D9C72E2001040C2 /* CoreBluetooth.framework in Embed Frameworks */,
+				84AFD5D11D9B2DBB001040C2 /* Alamofire.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84ACD9AE1D9A1A8C00C2D0CC /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				84ACD99A1D9A1A8C00C2D0CC /* Lumen WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84ACD9B21D9A1A8C00C2D0CC /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				84ACD98B1D9A1A8C00C2D0CC /* Lumen WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84AFD5DE1D9B2E2B001040C2 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				84AFD61A1D9C9978001040C2 /* SwiftyJSON.framework in Embed Frameworks */,
+				84AFD5DB1D9B2E2B001040C2 /* Alamofire.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84AFD6181D9C9940001040C2 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				84AFD6151D9C9940001040C2 /* SwiftyJSON.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		8407DADB1D9B19E400A2B0EE /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		84ACD9781D9A1A8C00C2D0CC /* Lumen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lumen.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		84ACD97B1D9A1A8C00C2D0CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		84ACD97D1D9A1A8C00C2D0CC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		84ACD9801D9A1A8C00C2D0CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		84ACD9821D9A1A8C00C2D0CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		84ACD9851D9A1A8C00C2D0CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		84ACD9871D9A1A8C00C2D0CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84ACD98A1D9A1A8C00C2D0CC /* Lumen WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lumen WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		84ACD9901D9A1A8C00C2D0CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		84ACD9921D9A1A8C00C2D0CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		84ACD9941D9A1A8C00C2D0CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84ACD9991D9A1A8C00C2D0CC /* Lumen WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Lumen WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		84ACD99F1D9A1A8C00C2D0CC /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		84ACD9A01D9A1A8C00C2D0CC /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		84ACD9A21D9A1A8C00C2D0CC /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		84ACD9A41D9A1A8C00C2D0CC /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		84ACD9A61D9A1A8C00C2D0CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		84ACD9A81D9A1A8C00C2D0CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84AFD5B71D9B2DAC001040C2 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = Libs/Alamofire/Alamofire.xcodeproj; sourceTree = "<group>"; };
+		84AFD5FC1D9C9930001040C2 /* SwiftyJSON.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SwiftyJSON.xcodeproj; path = "Libs/SwiftyJSON-master/SwiftyJSON.xcodeproj"; sourceTree = "<group>"; };
+		84AFD61D1D9C9F55001040C2 /* MainScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainScreen.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		84ACD9751D9A1A8C00C2D0CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84AFD5ED1D9C72E1001040C2 /* CoreBluetooth.framework in Frameworks */,
+				84AFD5D01D9B2DBB001040C2 /* Alamofire.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84ACD9961D9A1A8C00C2D0CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84AFD6191D9C9978001040C2 /* SwiftyJSON.framework in Frameworks */,
+				84AFD5DA1D9B2E2B001040C2 /* Alamofire.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84AFD5D81D9B2DC7001040C2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84AFD6141D9C9940001040C2 /* SwiftyJSON.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8407DADA1D9B19E400A2B0EE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8407DADB1D9B19E400A2B0EE /* CoreBluetooth.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		84ACD96F1D9A1A8C00C2D0CC = {
+			isa = PBXGroup;
+			children = (
+				84AFD5FC1D9C9930001040C2 /* SwiftyJSON.xcodeproj */,
+				84AFD5B71D9B2DAC001040C2 /* Alamofire.xcodeproj */,
+				84ACD97A1D9A1A8C00C2D0CC /* Lumen */,
+				84ACD98E1D9A1A8C00C2D0CC /* Lumen WatchKit App */,
+				84ACD99D1D9A1A8C00C2D0CC /* Lumen WatchKit Extension */,
+				84ACD9791D9A1A8C00C2D0CC /* Products */,
+				8407DADA1D9B19E400A2B0EE /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		84ACD9791D9A1A8C00C2D0CC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				84ACD9781D9A1A8C00C2D0CC /* Lumen.app */,
+				84ACD98A1D9A1A8C00C2D0CC /* Lumen WatchKit App.app */,
+				84ACD9991D9A1A8C00C2D0CC /* Lumen WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		84ACD97A1D9A1A8C00C2D0CC /* Lumen */ = {
+			isa = PBXGroup;
+			children = (
+				84ACD97B1D9A1A8C00C2D0CC /* AppDelegate.swift */,
+				84ACD97D1D9A1A8C00C2D0CC /* ViewController.swift */,
+				84ACD97F1D9A1A8C00C2D0CC /* Main.storyboard */,
+				84ACD9821D9A1A8C00C2D0CC /* Assets.xcassets */,
+				84ACD9841D9A1A8C00C2D0CC /* LaunchScreen.storyboard */,
+				84ACD9871D9A1A8C00C2D0CC /* Info.plist */,
+			);
+			path = Lumen;
+			sourceTree = "<group>";
+		};
+		84ACD98E1D9A1A8C00C2D0CC /* Lumen WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				84ACD98F1D9A1A8C00C2D0CC /* Interface.storyboard */,
+				84ACD9921D9A1A8C00C2D0CC /* Assets.xcassets */,
+				84ACD9941D9A1A8C00C2D0CC /* Info.plist */,
+			);
+			path = "Lumen WatchKit App";
+			sourceTree = "<group>";
+		};
+		84ACD99D1D9A1A8C00C2D0CC /* Lumen WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				84AFD61D1D9C9F55001040C2 /* MainScreen.swift */,
+				84ACD9A01D9A1A8C00C2D0CC /* InterfaceController.swift */,
+				84ACD9A21D9A1A8C00C2D0CC /* ExtensionDelegate.swift */,
+				84ACD9A41D9A1A8C00C2D0CC /* NotificationController.swift */,
+				84ACD9A61D9A1A8C00C2D0CC /* Assets.xcassets */,
+				84ACD9A81D9A1A8C00C2D0CC /* Info.plist */,
+				84ACD99E1D9A1A8C00C2D0CC /* Supporting Files */,
+			);
+			path = "Lumen WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		84ACD99E1D9A1A8C00C2D0CC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				84ACD99F1D9A1A8C00C2D0CC /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		84AFD5B81D9B2DAC001040C2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				84AFD5C31D9B2DAC001040C2 /* Alamofire.framework */,
+				84AFD5C51D9B2DAC001040C2 /* Alamofire iOS Tests.xctest */,
+				84AFD5C71D9B2DAC001040C2 /* Alamofire.framework */,
+				84AFD5C91D9B2DAC001040C2 /* Alamofire macOS Tests.xctest */,
+				84AFD5CB1D9B2DAC001040C2 /* Alamofire.framework */,
+				84AFD5CD1D9B2DAC001040C2 /* Alamofire tvOS Tests.xctest */,
+				84AFD5CF1D9B2DAC001040C2 /* Alamofire.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		84AFD5FD1D9C9930001040C2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				84AFD6071D9C9930001040C2 /* SwiftyJSON.framework */,
+				84AFD6091D9C9930001040C2 /* SwiftyJSON iOS Tests.xctest */,
+				84AFD60B1D9C9930001040C2 /* SwiftyJSON.framework */,
+				84AFD60D1D9C9930001040C2 /* SwiftyJSON OSX Tests.xctest */,
+				84AFD60F1D9C9930001040C2 /* SwiftyJSON.framework */,
+				84AFD6111D9C9930001040C2 /* SwiftyJSON.framework */,
+				84AFD6131D9C9930001040C2 /* SwiftyJSON tvOS Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		84ACD9771D9A1A8C00C2D0CC /* Lumen */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84ACD9B31D9A1A8C00C2D0CC /* Build configuration list for PBXNativeTarget "Lumen" */;
+			buildPhases = (
+				84ACD9741D9A1A8C00C2D0CC /* Sources */,
+				84ACD9751D9A1A8C00C2D0CC /* Frameworks */,
+				84ACD9761D9A1A8C00C2D0CC /* Resources */,
+				84ACD9B21D9A1A8C00C2D0CC /* Embed Watch Content */,
+				8407DB211D9B291A00A2B0EE /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				84ACD98D1D9A1A8C00C2D0CC /* PBXTargetDependency */,
+				84AFD5D31D9B2DBB001040C2 /* PBXTargetDependency */,
+			);
+			name = Lumen;
+			productName = Lumen;
+			productReference = 84ACD9781D9A1A8C00C2D0CC /* Lumen.app */;
+			productType = "com.apple.product-type.application";
+		};
+		84ACD9891D9A1A8C00C2D0CC /* Lumen WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84ACD9AF1D9A1A8C00C2D0CC /* Build configuration list for PBXNativeTarget "Lumen WatchKit App" */;
+			buildPhases = (
+				84ACD9881D9A1A8C00C2D0CC /* Resources */,
+				84ACD9AE1D9A1A8C00C2D0CC /* Embed App Extensions */,
+				84AFD5D81D9B2DC7001040C2 /* Frameworks */,
+				84AFD6181D9C9940001040C2 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				84ACD99C1D9A1A8C00C2D0CC /* PBXTargetDependency */,
+				84AFD6171D9C9940001040C2 /* PBXTargetDependency */,
+			);
+			name = "Lumen WatchKit App";
+			productName = "Lumen WatchKit App";
+			productReference = 84ACD98A1D9A1A8C00C2D0CC /* Lumen WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		84ACD9981D9A1A8C00C2D0CC /* Lumen WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84ACD9AB1D9A1A8C00C2D0CC /* Build configuration list for PBXNativeTarget "Lumen WatchKit Extension" */;
+			buildPhases = (
+				84ACD9951D9A1A8C00C2D0CC /* Sources */,
+				84ACD9961D9A1A8C00C2D0CC /* Frameworks */,
+				84ACD9971D9A1A8C00C2D0CC /* Resources */,
+				84AFD5DE1D9B2E2B001040C2 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				84AFD5DD1D9B2E2B001040C2 /* PBXTargetDependency */,
+				84AFD61C1D9C9978001040C2 /* PBXTargetDependency */,
+			);
+			name = "Lumen WatchKit Extension";
+			productName = "Lumen WatchKit Extension";
+			productReference = 84ACD9991D9A1A8C00C2D0CC /* Lumen WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		84ACD9701D9A1A8C00C2D0CC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "Dewar Tan";
+				TargetAttributes = {
+					84ACD9771D9A1A8C00C2D0CC = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 6YFC789GR4;
+						ProvisioningStyle = Automatic;
+					};
+					84ACD9891D9A1A8C00C2D0CC = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 6YFC789GR4;
+						LastSwiftMigration = 0800;
+						ProvisioningStyle = Automatic;
+					};
+					84ACD9981D9A1A8C00C2D0CC = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 6YFC789GR4;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 84ACD9731D9A1A8C00C2D0CC /* Build configuration list for PBXProject "Lumen" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 84ACD96F1D9A1A8C00C2D0CC;
+			productRefGroup = 84ACD9791D9A1A8C00C2D0CC /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 84AFD5B81D9B2DAC001040C2 /* Products */;
+					ProjectRef = 84AFD5B71D9B2DAC001040C2 /* Alamofire.xcodeproj */;
+				},
+				{
+					ProductGroup = 84AFD5FD1D9C9930001040C2 /* Products */;
+					ProjectRef = 84AFD5FC1D9C9930001040C2 /* SwiftyJSON.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				84ACD9771D9A1A8C00C2D0CC /* Lumen */,
+				84ACD9891D9A1A8C00C2D0CC /* Lumen WatchKit App */,
+				84ACD9981D9A1A8C00C2D0CC /* Lumen WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		84AFD5C31D9B2DAC001040C2 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = 84AFD5C21D9B2DAC001040C2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		84AFD5C51D9B2DAC001040C2 /* Alamofire iOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire iOS Tests.xctest";
+			remoteRef = 84AFD5C41D9B2DAC001040C2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		84AFD5C71D9B2DAC001040C2 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = 84AFD5C61D9B2DAC001040C2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		84AFD5C91D9B2DAC001040C2 /* Alamofire macOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire macOS Tests.xctest";
+			remoteRef = 84AFD5C81D9B2DAC001040C2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		84AFD5CB1D9B2DAC001040C2 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = 84AFD5CA1D9B2DAC001040C2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		84AFD5CD1D9B2DAC001040C2 /* Alamofire tvOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire tvOS Tests.xctest";
+			remoteRef = 84AFD5CC1D9B2DAC001040C2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		84AFD5CF1D9B2DAC001040C2 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = 84AFD5CE1D9B2DAC001040C2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		84AFD6071D9C9930001040C2 /* SwiftyJSON.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwiftyJSON.framework;
+			remoteRef = 84AFD6061D9C9930001040C2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		84AFD6091D9C9930001040C2 /* SwiftyJSON iOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SwiftyJSON iOS Tests.xctest";
+			remoteRef = 84AFD6081D9C9930001040C2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		84AFD60B1D9C9930001040C2 /* SwiftyJSON.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwiftyJSON.framework;
+			remoteRef = 84AFD60A1D9C9930001040C2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		84AFD60D1D9C9930001040C2 /* SwiftyJSON OSX Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SwiftyJSON OSX Tests.xctest";
+			remoteRef = 84AFD60C1D9C9930001040C2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		84AFD60F1D9C9930001040C2 /* SwiftyJSON.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwiftyJSON.framework;
+			remoteRef = 84AFD60E1D9C9930001040C2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		84AFD6111D9C9930001040C2 /* SwiftyJSON.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwiftyJSON.framework;
+			remoteRef = 84AFD6101D9C9930001040C2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		84AFD6131D9C9930001040C2 /* SwiftyJSON tvOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SwiftyJSON tvOS Tests.xctest";
+			remoteRef = 84AFD6121D9C9930001040C2 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		84ACD9761D9A1A8C00C2D0CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84ACD9861D9A1A8C00C2D0CC /* LaunchScreen.storyboard in Resources */,
+				84ACD9831D9A1A8C00C2D0CC /* Assets.xcassets in Resources */,
+				84ACD9811D9A1A8C00C2D0CC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84ACD9881D9A1A8C00C2D0CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84ACD9931D9A1A8C00C2D0CC /* Assets.xcassets in Resources */,
+				84ACD9911D9A1A8C00C2D0CC /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84ACD9971D9A1A8C00C2D0CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84ACD9A71D9A1A8C00C2D0CC /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		84ACD9741D9A1A8C00C2D0CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84ACD97E1D9A1A8C00C2D0CC /* ViewController.swift in Sources */,
+				84ACD97C1D9A1A8C00C2D0CC /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84ACD9951D9A1A8C00C2D0CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84ACD9A51D9A1A8C00C2D0CC /* NotificationController.swift in Sources */,
+				84AFD61E1D9C9F55001040C2 /* MainScreen.swift in Sources */,
+				84ACD9A31D9A1A8C00C2D0CC /* ExtensionDelegate.swift in Sources */,
+				84ACD9A11D9A1A8C00C2D0CC /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		84ACD98D1D9A1A8C00C2D0CC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 84ACD9891D9A1A8C00C2D0CC /* Lumen WatchKit App */;
+			targetProxy = 84ACD98C1D9A1A8C00C2D0CC /* PBXContainerItemProxy */;
+		};
+		84ACD99C1D9A1A8C00C2D0CC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 84ACD9981D9A1A8C00C2D0CC /* Lumen WatchKit Extension */;
+			targetProxy = 84ACD99B1D9A1A8C00C2D0CC /* PBXContainerItemProxy */;
+		};
+		84AFD5D31D9B2DBB001040C2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Alamofire iOS";
+			targetProxy = 84AFD5D21D9B2DBB001040C2 /* PBXContainerItemProxy */;
+		};
+		84AFD5DD1D9B2E2B001040C2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Alamofire watchOS";
+			targetProxy = 84AFD5DC1D9B2E2B001040C2 /* PBXContainerItemProxy */;
+		};
+		84AFD6171D9C9940001040C2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "SwiftyJSON watchOS";
+			targetProxy = 84AFD6161D9C9940001040C2 /* PBXContainerItemProxy */;
+		};
+		84AFD61C1D9C9978001040C2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "SwiftyJSON watchOS";
+			targetProxy = 84AFD61B1D9C9978001040C2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		84ACD97F1D9A1A8C00C2D0CC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84ACD9801D9A1A8C00C2D0CC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		84ACD9841D9A1A8C00C2D0CC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84ACD9851D9A1A8C00C2D0CC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		84ACD98F1D9A1A8C00C2D0CC /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84ACD9901D9A1A8C00C2D0CC /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		84ACD9A91D9A1A8C00C2D0CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		84ACD9AA1D9A1A8C00C2D0CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		84ACD9AC1D9A1A8C00C2D0CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				DEVELOPMENT_TEAM = 6YFC789GR4;
+				INFOPLIST_FILE = "Lumen WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Lighting.Lumen.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Debug;
+		};
+		84ACD9AD1D9A1A8C00C2D0CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				DEVELOPMENT_TEAM = 6YFC789GR4;
+				INFOPLIST_FILE = "Lumen WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Lighting.Lumen.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Release;
+		};
+		84ACD9B01D9A1A8C00C2D0CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = 6YFC789GR4;
+				IBSC_MODULE = Lumen_WatchKit_Extension;
+				INFOPLIST_FILE = "Lumen WatchKit App/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Lighting.Lumen.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Debug;
+		};
+		84ACD9B11D9A1A8C00C2D0CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = 6YFC789GR4;
+				IBSC_MODULE = Lumen_WatchKit_Extension;
+				INFOPLIST_FILE = "Lumen WatchKit App/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Lighting.Lumen.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Release;
+		};
+		84ACD9B41D9A1A8C00C2D0CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 6YFC789GR4;
+				INFOPLIST_FILE = Lumen/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Lighting.Lumen;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		84ACD9B51D9A1A8C00C2D0CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 6YFC789GR4;
+				INFOPLIST_FILE = Lumen/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Lighting.Lumen;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		84ACD9731D9A1A8C00C2D0CC /* Build configuration list for PBXProject "Lumen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84ACD9A91D9A1A8C00C2D0CC /* Debug */,
+				84ACD9AA1D9A1A8C00C2D0CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84ACD9AB1D9A1A8C00C2D0CC /* Build configuration list for PBXNativeTarget "Lumen WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84ACD9AC1D9A1A8C00C2D0CC /* Debug */,
+				84ACD9AD1D9A1A8C00C2D0CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84ACD9AF1D9A1A8C00C2D0CC /* Build configuration list for PBXNativeTarget "Lumen WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84ACD9B01D9A1A8C00C2D0CC /* Debug */,
+				84ACD9B11D9A1A8C00C2D0CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84ACD9B31D9A1A8C00C2D0CC /* Build configuration list for PBXNativeTarget "Lumen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84ACD9B41D9A1A8C00C2D0CC /* Debug */,
+				84ACD9B51D9A1A8C00C2D0CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 84ACD9701D9A1A8C00C2D0CC /* Project object */;
+}

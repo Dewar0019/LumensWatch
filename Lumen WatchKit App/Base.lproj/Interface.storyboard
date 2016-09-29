@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="11077"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Lumen_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <label alignment="center" text="Loading" id="Rk7-NY-Kcy"/>
+                        <imageView alignment="center" verticalAlignment="center" id="fTb-pk-4Gl"/>
+                    </items>
+                    <connections>
+                        <outlet property="interfaceImage" destination="fTb-pk-4Gl" id="ZhG-Oy-kyO"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="220" y="345"/>
+        </scene>
+        <!--MainScreen-->
+        <scene sceneID="l9a-jQ-A3k">
+            <objects>
+                <controller identifier="MainScreen" id="7vP-sZ-yU5" customClass="MainScreen" customModule="Lumen_WatchKit_Extension">
+                    <items>
+                        <label alignment="center" verticalAlignment="center" text="Label" id="DEf-ZQ-ZeD"/>
+                    </items>
+                    <connections>
+                        <outlet property="connectedText" destination="DEf-ZQ-ZeD" id="YcE-F2-Vuc"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="494" y="337"/>
+        </scene>
+    </scenes>
+</document>
