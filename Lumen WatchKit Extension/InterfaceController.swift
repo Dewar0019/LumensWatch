@@ -24,6 +24,9 @@ enum Result<T, E: Error> {
     }
 }
 
+
+
+
 class InterfaceController: WKInterfaceController {
     
     
@@ -32,30 +35,40 @@ class InterfaceController: WKInterfaceController {
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
         
-        print("In awake");
+        print("Awake");
+        //Starting Animation
         self.interfaceImage.setImageNamed("lumen");
         self.interfaceImage.startAnimatingWithImages(in: NSMakeRange(1, 15), duration: 1.0, repeatCount: 0);
         
         
-        performAndRetryRequestWithURL(url: "https://httpbin.org/get") { value in
+        performAndRetryRequestWithURL(tries: 0, url: "http://129.64.188.69:8080/") { value in
             self.interfaceImage.stopAnimating();
-            print("Hello")
-            WKInterfaceController.reloadRootControllers(withNames: ["MainScreen"], contexts: nil);
+            WKInterfaceController.reloadRootControllers(withNames: ["MainScreen"], contexts: ["Connected"]);
         }
     }
     
     
-    func performAndRetryRequestWithURL(url: String, completionHandler:@escaping (AnyObject?) -> Void) {
+    func performAndRetryRequestWithURL(tries: Int, url: String, completionHandler:@escaping (AnyObject?) -> Void) {
         Alamofire.request(url).responseJSON{ response in
             switch response.result {
             case .success(let value):
-                completionHandler(value as AnyObject?);
+                let json = JSON(value);
+                let name = json["MAC"].stringValue;
+                if(name == "EC:AD:B8:0A:BB:AD") {
+                    completionHandler(value as AnyObject?);
+                }
+                print("Not currently set on server");
             case .failure(let error):
                 print(error)
                 let deadlineTime = DispatchTime.now() + .seconds(5)
                 DispatchQueue.main.asyncAfter(deadline: deadlineTime) {
-                    print("retrying");
-                    self.performAndRetryRequestWithURL(url: url, completionHandler: completionHandler)
+                    if(tries < 5) {
+                        print("retrying, " + tries + " out of 5 attempts");
+                        self.performAndRetryRequestWithURL(tries: (tries+1), url: url, completionHandler: completionHandler)
+                    } else {
+                        WKInterfaceController.reloadRootControllers(withNames: ["MainScreen"], contexts: ["Not Connected"]);
+                        
+                    }
                 }
             }
         }
