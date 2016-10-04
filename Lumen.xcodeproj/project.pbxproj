@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		845B970B1DA33FC300205DE0 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84AFD5CF1D9B2DAC001040C2 /* Alamofire.framework */; };
+		845B970C1DA33FC300205DE0 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 84AFD5CF1D9B2DAC001040C2 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		84ACD97C1D9A1A8C00C2D0CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84ACD97B1D9A1A8C00C2D0CC /* AppDelegate.swift */; };
 		84ACD97E1D9A1A8C00C2D0CC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84ACD97D1D9A1A8C00C2D0CC /* ViewController.swift */; };
 		84ACD9811D9A1A8C00C2D0CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84ACD97F1D9A1A8C00C2D0CC /* Main.storyboard */; };
@@ -34,6 +36,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		845B970D1DA33FC300205DE0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84AFD5B71D9B2DAC001040C2 /* Alamofire.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = E4202FCD1B667AA100C997FB;
+			remoteInfo = "Alamofire watchOS";
+		};
 		84ACD98C1D9A1A8C00C2D0CC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 84ACD9701D9A1A8C00C2D0CC /* Project object */;
@@ -230,6 +239,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				84AFD6151D9C9940001040C2 /* SwiftyJSON.framework in Embed Frameworks */,
+				845B970C1DA33FC300205DE0 /* Alamofire.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -285,6 +295,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				84AFD6141D9C9940001040C2 /* SwiftyJSON.framework in Frameworks */,
+				845B970B1DA33FC300205DE0 /* Alamofire.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,6 +444,7 @@
 			dependencies = (
 				84ACD99C1D9A1A8C00C2D0CC /* PBXTargetDependency */,
 				84AFD6171D9C9940001040C2 /* PBXTargetDependency */,
+				845B970E1DA33FC300205DE0 /* PBXTargetDependency */,
 			);
 			name = "Lumen WatchKit App";
 			productName = "Lumen WatchKit App";
@@ -672,6 +684,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		845B970E1DA33FC300205DE0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Alamofire watchOS";
+			targetProxy = 845B970D1DA33FC300205DE0 /* PBXContainerItemProxy */;
+		};
 		84ACD98D1D9A1A8C00C2D0CC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 84ACD9891D9A1A8C00C2D0CC /* Lumen WatchKit App */;

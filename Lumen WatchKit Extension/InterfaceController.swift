@@ -41,14 +41,15 @@ class InterfaceController: WKInterfaceController {
         self.interfaceImage.startAnimatingWithImages(in: NSMakeRange(1, 15), duration: 1.0, repeatCount: 0);
         
         
-        performAndRetryRequestWithURL(tries: 0, url: "http://129.64.188.69:8080/") { value in
+        performAndRetryRequestWithURL(url: "http://129.64.188.69:8080/") { value in
+            print("sucessful connection");
             self.interfaceImage.stopAnimating();
             WKInterfaceController.reloadRootControllers(withNames: ["MainScreen"], contexts: ["Connected"]);
         }
     }
     
     
-    func performAndRetryRequestWithURL(tries: Int, url: String, completionHandler:@escaping (AnyObject?) -> Void) {
+    func performAndRetryRequestWithURL(url: String, completionHandler:@escaping (AnyObject?) -> Void) {
         Alamofire.request(url).responseJSON{ response in
             switch response.result {
             case .success(let value):
@@ -62,14 +63,11 @@ class InterfaceController: WKInterfaceController {
                 print(error)
                 let deadlineTime = DispatchTime.now() + .seconds(5)
                 DispatchQueue.main.asyncAfter(deadline: deadlineTime) {
-                    if(tries < 5) {
-                        print("retrying, " + tries + " out of 5 attempts");
-                        self.performAndRetryRequestWithURL(tries: (tries+1), url: url, completionHandler: completionHandler)
-                    } else {
-                        WKInterfaceController.reloadRootControllers(withNames: ["MainScreen"], contexts: ["Not Connected"]);
-                        
-                    }
+                    self.interfaceImage.stopAnimating();
+                    print("Connection failed");
+                    WKInterfaceController.reloadRootControllers(withNames: ["MainScreen"], contexts: ["Not Connected"]);
                 }
+                
             }
         }
     }
