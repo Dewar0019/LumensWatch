@@ -26,15 +26,15 @@
                 <controller identifier="MainScreen" id="7vP-sZ-yU5" customClass="MainScreen" customModule="Lumen_WatchKit_Extension">
                     <items>
                         <label alignment="center" verticalAlignment="center" text="Status" id="DEf-ZQ-ZeD"/>
-                        <button width="1" alignment="left" verticalAlignment="bottom" title="Try Again" id="bpO-9q-oE7">
+                        <button width="1" alignment="left" verticalAlignment="bottom" title="Response" id="bpO-9q-oE7">
                             <connections>
-                                <action selector="tryAgainButtonClick" destination="7vP-sZ-yU5" id="j6q-1R-n6l"/>
+                                <action selector="responseButtonClick" destination="7vP-sZ-yU5" id="03e-GV-0Ia"/>
                             </connections>
                         </button>
                     </items>
                     <connections>
                         <outlet property="connectedText" destination="DEf-ZQ-ZeD" id="YcE-F2-Vuc"/>
-                        <outlet property="tryAgain" destination="bpO-9q-oE7" id="sQ5-Yh-MOU"/>
+                        <outlet property="response" destination="bpO-9q-oE7" id="lSX-ZI-N5d"/>
                     </connections>
                 </controller>
             </objects>

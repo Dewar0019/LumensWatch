@@ -11,27 +11,18 @@ import Foundation
 import Alamofire
 import SwiftyJSON
 
-enum Result<T, E: Error> {
-    case Success(T)
-    case Failure(E)
-    
-    init(value: T) {
-        self = .Success(value)
-    }
-    
-    init(error: E) {
-        self = .Failure(error)
-    }
+
+
+struct GlobalVariables {
+    static var piURL = "http://129.64.188.69:8080/";
 }
-
-
-
 
 class InterfaceController: WKInterfaceController {
     
     
     @IBOutlet var interfaceImage: WKInterfaceImage!;
-    
+
+
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
         
@@ -39,7 +30,6 @@ class InterfaceController: WKInterfaceController {
         //Starting Animation
         self.interfaceImage.setImageNamed("lumen");
         self.interfaceImage.startAnimatingWithImages(in: NSMakeRange(1, 15), duration: 1.0, repeatCount: 0);
-        
         
         performAndRetryRequestWithURL(url: "http://129.64.188.69:8080/") { value in
             print("sucessful connection");
@@ -54,10 +44,10 @@ class InterfaceController: WKInterfaceController {
             switch response.result {
             case .success(let value):
                 let json = JSON(value);
-                let name = json["MAC"].stringValue;
-                if(name == "EC:AD:B8:0A:BB:AD") {
+//                let name = json["MAC"].stringValue;
+//                if(name == "EC:AD:B8:0A:BB:AD") {
                     completionHandler(value as AnyObject?);
-                }
+//                }
                 print("Not currently set on server");
             case .failure(let error):
                 print(error)
