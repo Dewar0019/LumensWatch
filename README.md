@@ -1,5 +1,9 @@
 # LumensWatch
 
+<a href="https://www.youtube.com/watch?v=v2OUrstSwUc&t=2s" target="_blank"><img src="https://i.ytimg.com/vi/v2OUrstSwUc/hqdefault.jpg?sqp=-oaymwEZCNACELwBSFXyq4qpAwsIARUAAIhCGAFwAQ==&rs=AOn4CLC8TKx0Z2PhwmMvpRXdwM1ObqS7eQ" 
+alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
+
+
 ## Background 
 In order to connecting the fixture by mobile device, controlling terminal(Rasberry PI)  connect apple watch by bluetooth. LumensWatch will detect the devices
 near servers and trying to pair bluetooth. Server will refresh paired status every five seconds. Also, to avoid automatic connection
